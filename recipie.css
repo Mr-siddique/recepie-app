@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    box-sizing : border-box;
+}
+body{
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #99f2c8, #1f4037); 
+    background: linear-gradient(to left, #99f2c8, #1f4037); 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "poppins",sans-serif;
+    margin:0;
+    min-height:100vh;
+}
+img{
+    max-width:100%;
+}
+.mobile-container{
+    background-color:#fff;
+    width:400px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:none;    
+}
+header input{
+    background-color:#eee;
+    border:none;
+    border-radius:3px;
+    padding:0.5rem 1rem;
+    font-family: inherit;
+}
+header button{
+   background-color: transparent;
+   color:#aaa;
+   font-size:2rem; 
+   border:none;
+   margin-left:10px;
+}
+.fab-container{
+    padding:1rem;
+    /* border:1px solid black; */
+    text-align:center;
+    background-color: rgb(247, 202, 247);
+}
+.fab-meals{
+    display: flex;
+    /* overflow: auto; */
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type:none;
+   padding:0;
+}
+.fab-meals li{
+/* background-color: #fff; */
+position:relative;
+margin:5px;
+width:75px;
+}
+.fab-meals li .clear{
+    border:none;
+    background-color: transparent;
+    position:absolute;
+    top:-0.5rem;
+    right:-0.5rem;
+    font-size:1.2rem;
+    opacity:0;
+    cursor:pointer;
+}
+.fab-meals li .clear:hover{
+    opacity:1;
+}
+.fab-meals li img{
+    border:2px solid #ffffff;
+    border-radius:50%;
+    object-fit:cover;
+    height:75px;
+    width:75px;
+}
+.fab-meals li span{
+  font-size:0.9rem; 
+  display:inline-block;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis; 
+  width:57px;
+}
+.meal{
+ border-radius:3px;
+ margin:1.5rem;
+ /* border:2px solid black; */
+ overflow: hidden;
+
+}
+.meal-header{
+position: relative;
+}
+.meal-header .random{
+    position:absolute;
+    top:1rem;
+    background-color: #fff;
+    padding:0.25rem 1rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.meal-header img{
+height:250;
+width:100%;
+object-fit: cover;
+}
+.meal-body{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding:1rem;
+}
+.meal-body h4{
+    margin:0;
+}
+.meal-body .fav-btn{
+    background-color: transparent;
+    border:none;
+    font-size:2rem;
+    color:rgb(182, 173, 173);
+    cursor:pointer;
+}
+.meal-body .fav-btn.active{
+color:rebeccapurple;
+}
+.popup-container{
+    background-color:rbga(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.popup-container.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.popup{
+background: #C6FFDD;
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+border-radius: 5px;
+padding: 0 2rem;
+position: relative;
+max-width:500px;
+width:100%;
+max-height:100vh;
+overflow:auto;
+}
+
+.popup .close-popup{
+    border:none;
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor:pointer;
+    outline: none;
+
+}
+.meal-info h1{
+    text-align: center;
+}
+a{
+    color:black;
+    margin-left:25px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(248, 236, 236);
+    border-radius:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
